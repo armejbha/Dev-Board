@@ -18,7 +18,7 @@ function dynamicDate() {
 
     // Convert to 12-hour format
     const formattedHours = hours % 12 || 12;
-    const formattedTime = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+    const formattedTime = `${formattedHours.toString().padStart(2,"0")}:${minutes.toString().padStart(2,"0")}:${seconds.toString().padStart(2,"0")} ${ampm}`;
     
 
     // Insert values into HTML
