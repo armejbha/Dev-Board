@@ -47,15 +47,18 @@ function dynamicDate() {
   const decrease=document.getElementById("decrease-count");
   const buttons=document.querySelectorAll(".complete-btn");
   const messages=document.getElementById("show-message");
+  const changeColorBtn = document.getElementById('change-color-btn'); 
+  const totalTasks=buttons.length;
+  let completedTasks=0;
 //   loop to access all buttons 
 for(let button of buttons){
     button.addEventListener("click",function(event){
        const currentIncreaseCount=parseInt(increase.textContent);
        const currentDecreaseCount=parseInt(decrease.textContent);
        if(currentDecreaseCount>0){
+        alert("Board Update Successfully");
         const parent=event.target.parentNode.parentNode;
         const heading=parent.querySelector(".task-heading").innerText;
-        alert("Board Update Successfully")
         // count 
         decrease.textContent=currentDecreaseCount-1;
         increase.textContent=currentIncreaseCount+1;
@@ -66,11 +69,14 @@ for(let button of buttons){
 
         // show message on activity 
         showMessage(heading);
-
+        // all task completed
+        completedTasks++;
+        if (completedTasks === totalTasks) {
+            alert("Congratulations! All tasks are completed.");
+        }
+            
        }
-       else if(currentDecreaseCount==0){
-        alert("your task is finished")
-       }
+       
     })
 }
 
@@ -79,3 +85,25 @@ const clearHistory=document.getElementById("clear-history");
     clearHistory.addEventListener("click",function(){
         messages.innerHTML="";
     })
+
+
+const blog= document.getElementById("blog");
+
+blog.addEventListener("click",function(){
+    window.location.href="./blog.html";
+})
+
+// randomly color change 
+
+
+function getRandomColor() { 
+ const letters = '0123456789ABCDEF';
+  let color = '#'; 
+  for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)]; 
+     } 
+ return color; 
+ } 
+
+changeColorBtn.addEventListener('click', function() { 
+document.body.style.backgroundColor = getRandomColor(); });
