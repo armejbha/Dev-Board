@@ -22,7 +22,7 @@ function dynamicDate() {
     
 
     // Insert values into HTML
-    dayElement.textContent = dayName + " ,";
+    dayElement.textContent = dayName;
     dateElement.textContent = formattedDate;
     return formattedTime;
   }
@@ -42,8 +42,8 @@ function dynamicDate() {
             message.innerText= `You have Complete The Task ${taskHeading} at ${time}`;
             messages.appendChild(message);
  }
-
- const increase=document.getElementById("increase-count");
+// get need Element 
+  const increase=document.getElementById("increase-count");
   const decrease=document.getElementById("decrease-count");
   const buttons=document.querySelectorAll(".complete-btn");
   const messages=document.getElementById("show-message");
@@ -86,7 +86,7 @@ const clearHistory=document.getElementById("clear-history");
         messages.innerHTML="";
     })
 
-
+// blog route 
 const blog= document.getElementById("blog");
 
 blog.addEventListener("click",function(){
