@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <!-- tailwind cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="pt-5">
+      <div
+        class="navbar bg-base-100 shadow-sm max-w-6xl mx-auto rounded-lg px-4"
+      >
+        <div class="flex-1">
+          <div class="flex items-center">
+            <div class="w-10 mr-1">
+              <img class="w-full" src="./assets/logo.png" alt="website logo" />
+            </div>
+            <h3 class="text-2xl">Dev<span class="font-bold">Board</span></h3>
+          </div>
+        </div>
+        <div class="flex-none">
+          <button
+            id="back"
+            class="hover:cursor-pointer bg-blue-600 text-xl font-semibold text-white px-2 py-1 rounded-lg"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-6xl mx-auto pb-4">
+      <h3 class="text-center text-3xl font-bold py-5">Blogs</h3>
+      <div class="space-y-5">
+        <div class="bg-base-100 rounded-lg">
+          <h2 class="px-4 pt-4 font-bold text-xl">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <!-- border  -->
+          <div
+            class="border-dashed border-b-2 border-b-slate-200 w-full my-3"
+          ></div>
+          <!-- ans  -->
+          <p class="px-4 pb-4">
+            In JavaScript, several way can select an element byId, byTagName,
+            byClassName, querySelectorAll and querySelector.
+          </p>
+        </div>
+        <div class="bg-base-100 rounded-lg">
+          <h2 class="px-4 pt-4 font-bold text-xl">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <!-- border  -->
+          <div
+            class="border-dashed border-b-2 border-b-slate-200 w-full my-3"
+          ></div>
+          <!-- ans  -->
+          <p class="px-4 pb-4">
+            innerHTML:It is the HTML content inside the element. it allows
+            modifying the element of HTML structure.
+          </p>
+          <p class="px-4 pb-4">
+            innerText:only the visible text content of an element. It's ignoring
+            hidden content.
+          </p>
+          <p class="px-4 pb-4">
+            textContent: it is the text content of html element it's include
+            hidden element.
+          </p>
+        </div>
+
+        <div class="bg-base-100 rounded-lg">
+          <h2 class="px-4 pt-4 font-bold text-xl">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <!-- border  -->
+          <div
+            class="border-dashed border-b-2 border-b-slate-200 w-full my-3"
+          ></div>
+          <!-- ans  -->
+          <p class="px-4 pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+            ab, iste dolores iusto doloribus tempora omnis, quasi sunt et a rem
+            unde voluptatibus ex. Ipsa quia perspiciatis numquam pariatur
+            cumque.
+          </p>
+        </div>
+        <div class="bg-base-100 rounded-lg">
+          <h2 class="px-4 pt-4 font-bold text-xl">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <!-- border  -->
+          <div
+            class="border-dashed border-b-2 border-b-slate-200 w-full my-3"
+          ></div>
+          <!-- ans  -->
+          <p class="px-4 pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+            ab, iste dolores iusto doloribus tempora omnis, quasi sunt et a rem
+            unde voluptatibus ex. Ipsa quia perspiciatis numquam pariatur
+            cumque.
+          </p>
+        </div>
+        <div class="bg-base-100 rounded-lg">
+          <h2 class="px-4 pt-4 font-bold text-xl">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <!-- border  -->
+          <div
+            class="border-dashed border-b-2 border-b-slate-200 w-full my-3"
+          ></div>
+          <!-- ans  -->
+          <p class="px-4 pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+            ab, iste dolores iusto doloribus tempora omnis, quasi sunt et a rem
+            unde voluptatibus ex. Ipsa quia perspiciatis numquam pariatur
+            cumque.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
